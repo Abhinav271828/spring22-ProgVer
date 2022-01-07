@@ -12,7 +12,7 @@ Propositional logic is about how to combine propositions, or assertions. We have
 
 There are two aspects of logic: its *syntax* (how to write expressions, a kind of grammar) and its *semantics* (what the expressions mean).
 
-### Syntax of Propositional Logic
+## Syntax of Propositional Logic
 In propositional logic, we have a denumerable set of *propositional variables*. Elements of this set are typically denoted by $p$, $q$, $p_1$, $q_1$, etc.:
 $$\text{Var} = \{p, q, p_1, q_1, \dots\}$$
 
@@ -43,8 +43,7 @@ assuming that the set of propositional variables can be mapped to the set of cha
 
 These definitions are *inductive*, in that they define the set of expressions by building up.
 
-#### Functions on Propositional Logic Expressions
-
+### Functions on Propositional Logic Expressions
 We can define a number of functions on propositional logic expressions.  
 
 For example, the function $\text{vars} : \text{Exp} \to \text{Var}$, which gives the set of all variables contained in an expression, can be defined recursively:
@@ -57,8 +56,7 @@ $$\begin{split}
 
 Similarly, we can define the functions $\text{size} : \text{Exp} \to \mathbb{N}$ and $\text{height} : \text{Exp} \to \mathbb{N}$.
 
-#### Substitutions
-
+### Substitutions
 In the AST of an expression, each node has an "address", given by how to reach it from the root.
 
 ![The AST with Addresses for $(p \wedge \neg q) \vee r$](addr.png)
